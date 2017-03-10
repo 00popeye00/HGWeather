@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">HGWeather</string>
+    <string name="editcityname">在此输入中文城市名</string>
+    <string name="refresh">刷新</string>
+    <string name="refresh_time">更新时间</string>
+    <string name="city_name">城市</string>
+    <string name="weather">天气状况</string>
+    <string name="temperature">温度</string>
+    <string name="pm25">空气质量</string>
+    <string name="pm25_advice">环境污染指数建议</string>
 </resources>

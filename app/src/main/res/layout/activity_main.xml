@@ -9,6 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@mipmap/background_1"
     android:orientation="vertical"
     tools:context="com.example.huyih.hgweather.MainActivity">
 
@@ -19,16 +20,16 @@
 
         <!--completionThreshold是输入几个字符与之匹配-->
         <AutoCompleteTextView
-            android:completionThreshold="2"
-            android:hint="在此输入城市名"
+            android:completionThreshold="1"
+            android:hint="@string/editcityname"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:id="@+id/search"
-            android:layout_weight="1"/>
+            android:layout_weight="1" android:textColor="@android:color/white"/>
 
 
         <Button
-            android:hint="搜索"
+            android:text="@string/refresh"
             android:id="@+id/search_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -39,19 +40,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="35dp"
-        android:text="更新时间"
+        android:text="@string/refresh_time"
+        android:textColor="#FFFFFF"
         android:gravity="right|bottom"
         android:id="@+id/loc"/>
 
     <TextView
         android:layout_marginTop="10dp"
-        android:text="城市"
+        android:text="@string/city_name"
         android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="80dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/city" android:textSize="45sp"/>
+        android:id="@+id/city" android:textSize="55sp"/>
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -71,8 +71,8 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:layout_weight="2"
-            android:text="天气状况描述"
-            android:textSize="20sp"
+            android:text="@string/weather"
+            android:textSize="35sp"
             android:id="@+id/txt"/>
     </LinearLayout>
 
@@ -81,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:gravity="center"
-        android:text="温度"
+        android:text="@string/temperature"
         android:textSize="60sp"
         android:id="@+id/tmp"/>
 
@@ -93,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="空气质量"
+            android:text="@string/pm25"
             android:textSize="20sp"
             android:id="@+id/fl"/>
 
@@ -102,10 +102,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="环境污染指数建议"
-            android:textSize="20sp"
+            android:text="@string/pm25_advice"
+            android:textSize="23sp"
             android:id="@+id/api"/>
-
-
 
 </LinearLayout>
